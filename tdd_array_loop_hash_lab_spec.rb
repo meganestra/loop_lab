@@ -8,20 +8,20 @@ class Lab < MiniTest::Test
   # ruby tdd_array_hash_lab_spec.rb
 
 
-# def test_array_length()
-#   length = length_of_arrays([1.23, 6.98, 8.43, 2.45], [4.23, 1.12, 0.52, 8.67])
-#   assert_equal(8, length)
-# end
+def test_array_length()
+  length = length_of_arrays([1.23, 6.98, 8.43, 2.45], [4.23, 1.12, 0.52, 8.67])
+  assert_equal(8, length)
+end
 
-# def test_sum_of_array()
-#   sum = sum_of_array([1,2,3,4,5])
-#   assert_equal(15, sum)
-# end
+def test_sum_of_array()
+  sum = sum_of_array([1,2,3,4,5])
+  assert_equal(15, sum)
+end
 
-# def test_find_item()
-#   find_item = find_item?(['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw'],'Ravenclaw')
-#   assert_equal(true, find_item)
-# end
+def test_find_item()
+  find_item = find_item?(['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw'],'Ravenclaw')
+  assert_equal(true, find_item)
+end
 
 def test_first_key_name()
   first_key_name = first_key_name({
@@ -32,5 +32,24 @@ def test_first_key_name()
     })
   assert_equal("Sandy", first_key_name)
 end
+
+def test_array_of_capitals()
+  array_of_capitals = array_of_capitals({
+      uk: {
+        capital: 'London',
+        population: 60
+      },
+      france: {
+        capital: 'Paris',
+        population: 70
+      },
+      italy: {
+        capital: 'Rome',
+        population: 56
+      }
+    })
+  assert_equal(['London','Paris', 'Rome'] ,array_of_capitals)
+end
+
 
 end
