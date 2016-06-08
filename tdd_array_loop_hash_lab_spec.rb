@@ -13,13 +13,24 @@ class Lab < MiniTest::Test
 #   assert_equal(8, length)
 # end
 
-def test_sum_of_array()
-  sum = sum_of_array([1,2,3,4,5])
-  assert_equal(15, sum)
+# def test_sum_of_array()
+#   sum = sum_of_array([1,2,3,4,5])
+#   assert_equal(15, sum)
+# end
+
+# def test_find_item()
+#   find_item = find_item?(['Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw'],'Ravenclaw')
+#   assert_equal(true, find_item)
+# end
+
+def test_first_key_name()
+  first_key_name = first_key_name({
+      'Sandy' => 12,
+      'Zsolt'  => 10,
+      'Val'  => 1356,
+      'Jay' => 1
+    })
+  assert_equal("Sandy", first_key_name)
 end
-
-
-
-
 
 end

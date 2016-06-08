@@ -5,16 +5,27 @@
 # end
 
 
-def sum_of_array(array)
+# def sum_of_array(array)
 
-total = 0
+# total = 0
 
-  for x in array
+#   for x in array
     
-    total += x
+#     total += x
 
-  end
+#   end
 
-return total
+# return total
 
+# end
+
+# review - could use for loop - return each item in array using loop and compare with word using == operator.
+# def find_item?(array, word)
+
+#     return array.include?(word)
+
+# end
+
+def first_key_name(hash)
+  return hash.keys().first
 end
